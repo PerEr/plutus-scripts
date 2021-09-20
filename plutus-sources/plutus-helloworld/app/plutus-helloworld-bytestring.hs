@@ -18,7 +18,7 @@ main :: IO ()
 main = do
   args <- getArgs
   let nargs = length args
-  let scriptname = if nargs > 1 then args!!1 else  "result.plutus"
+  let scriptname = if nargs > 1 then args!!1 else  "helloworld-bytestring.plutus"
   putStrLn $ "Writing output to: " ++ scriptname
   writePlutusScript hello scriptname helloWorldSerialised helloWorldSBS
 
